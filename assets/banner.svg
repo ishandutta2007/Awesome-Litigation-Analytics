@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Pulsing Node Animation -->
+    <style>
+      .pulse {
+        animation: pulse-anim 3s infinite ease-in-out;
+      }
+      .pulse-delay-1 {
+        animation: pulse-anim 3s infinite ease-in-out 1s;
+      }
+      .pulse-delay-2 {
+        animation: pulse-anim 3s infinite ease-in-out 2s;
+      }
+      .dash-flow {
+        stroke-dasharray: 8 6;
+        animation: dash 20s linear infinite;
+      }
+      @keyframes pulse-anim {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 8px #38bdf8); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -100; }
+      }
+      .title-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        fill: #ffffff;
+      }
+      .subtitle-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Decorative Grid Overlay -->
+  <path d="M0 50 H1200 M0 100 H1200 M0 150 H1200 M0 200 H1200 M0 250 H1200" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M200 0 V300 M400 0 V300 M600 0 V300 M800 0 V300 M1000 0 V300" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Glowing Abstract Waves / Network Lines -->
+  <g opacity="0.25">
+    <path d="M-50 220 Q 200 80, 500 200 T 1000 150 T 1250 250" fill="none" stroke="url(#accent-grad)" stroke-width="3" class="dash-flow"/>
+    <path d="M-50 80 Q 300 250, 700 100 T 1250 180" fill="none" stroke="#818cf8" stroke-width="2" class="dash-flow"/>
+  </g>
+
+  <!-- Network Nodes representing Analytics / Legal Scale -->
+  <g opacity="0.6">
+    <line x1="900" y1="80" x2="1020" y2="140" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="1020" y1="140" x2="960" y2="220" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="1020" y1="140" x2="1120" y2="100" stroke="#818cf8" stroke-width="1.5"/>
+    
+    <circle cx="900" cy="80" r="6" fill="#38bdf8" class="pulse"/>
+    <circle cx="1020" cy="140" r="8" fill="#c084fc" class="pulse-delay-1"/>
+    <circle cx="960" cy="220" r="5" fill="#818cf8" class="pulse-delay-2"/>
+    <circle cx="1120" cy="100" r="7" fill="#fbbf24" class="pulse"/>
+  </g>
+
+  <!-- Scales of Justice Symbol (Left Graphic Element) -->
+  <g transform="translate(80, 85)" opacity="0.9">
+    <path d="M 60 10 V 110 M 20 30 H 100 M 60 10 L 20 30 M 60 10 L 100 30" stroke="url(#gold-grad)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 20 30 L 5 70 Q 20 85 35 70 Z" fill="url(#gold-grad)" opacity="0.7"/>
+    <path d="M 100 30 L 85 70 Q 100 85 115 70 Z" fill="url(#gold-grad)" opacity="0.7"/>
+    <rect x="45" y="110" width="30" height="8" rx="4" fill="url(#gold-grad)"/>
+  </g>
+
+  <!-- Main Banner Header Text -->
+  <text x="240" y="130" class="title-text" font-size="44" letter-spacing="-0.5">Awesome Litigation Analytics ⚖️</text>
+  
+  <!-- Subtitle Text -->
+  <text x="240" y="175" class="subtitle-text" font-size="20">Data-Driven Judicial Insights • Docket Intelligence • Outcome Prediction</text>
+
+  <!-- Tech Badges inside Banner -->
+  <g transform="translate(240, 205)">
+    <rect x="0" y="0" width="130" height="28" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="65" y="19" font-family="system-ui" font-size="12" fill="#38bdf8" font-weight="600" text-anchor="middle">📊 Judge Metrics</text>
+
+    <rect x="142" y="0" width="145" height="28" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="214" y="19" font-family="system-ui" font-size="12" fill="#c084fc" font-weight="600" text-anchor="middle">🔍 Docket Scraping</text>
+
+    <rect x="299" y="0" width="150" height="28" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="374" y="19" font-family="system-ui" font-size="12" fill="#fbbf24" font-weight="600" text-anchor="middle">🤖 AI Prediction</text>
+  </g>
+</svg>
