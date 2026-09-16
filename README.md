@@ -58,9 +58,9 @@ The table below lists leading commercial litigation analytics software platforms
 
 ## 💻 Open-Source GitHub Projects
 
-Open-source litigation analytics repositories provide the foundation for public court data mining ⛏️, citation extraction 📚, docket scraping 🔍, and judicial data processing ⚙️. Below is a curated list ranked by **GitHub Star Count** (descending) 🌟.
+Open-source litigation analytics repositories provide the foundation for public court data mining ⛏️, citation extraction 📚, docket scraping 🔍, and judicial data processing ⚙️. Below is a curated list ranked by **GitHub Stars_Count** (descending) 🌟.
 
-| Project & Repository 🛠️ | Star Count ⭐️ | Description 📝 | Primary Use Case 🎯 |
+| Project & Repository 🛠️ | Stars_Count ⭐️ | Description 📝 | Primary Use Case 🎯 |
 | :--- | :--- | :--- | :--- |
 | **[CourtListener](https://github.com/freelawproject/courtlistener)** | [![Stars](https://img.shields.io/github/stars/freelawproject/courtlistener?style=social&color=white)](https://github.com/freelawproject/courtlistener/stargazers) | Fully searchable open archive of U.S. court opinions, dockets, oral arguments, RECAP filings, and judicial disclosures. | Court Data Infrastructure & Search 🏛️ |
 | **[x-ray](https://github.com/freelawproject/x-ray)** | [![Stars](https://img.shields.io/github/stars/freelawproject/x-ray?style=social&color=white)](https://github.com/freelawproject/x-ray/stargazers) | Open-source redactor inspection tool that identifies bad or incomplete PDF redactions in legal documents. | PDF Redaction & Security Audit 🛡️ |
@@ -107,7 +107,7 @@ Your support keeps legal data accessible, transparent, and community-driven! �
 1. Fork this repository.
 2. Update `README.md` following the standard tabular format.
 3. Ensure all SaaS entries include explicit starting prices, free tier/trial specs, and company scale metrics.
-4. For open-source tools, include valid GitHub star badges linking directly to `stargazers`.
+4. For open-source tools, include valid GitHub Stars_Badges linking directly to `stargazers`.
 5. Submit a Pull Request with a short summary of changes.
 
 ---
